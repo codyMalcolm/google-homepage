@@ -368,11 +368,11 @@ h4 {
 
 @media (max-width: 40em) {
   body {
-    grid-template-columns: 1fr 1fr 1fr; /* new */
-    grid-template-areas: "logo logo profile" /* new */
-                         "search search search" /* new */
-                         "main main main" /* new */
-                         "footer footer footer"; /* new */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo logo profile"
+                         "search search search"
+                         "main main main"
+                         "footer footer footer";
     overflow-x: hidden;
   }
 
@@ -381,13 +381,13 @@ h4 {
   }
 
   .logo {
-    display: flex; /* new */
-    justify-content: center; /* new */
-    align-items: center; /* new */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo > img {
-    width: 50%;  /* new */
+    width: 50%;
   }
 
   .performance p {
