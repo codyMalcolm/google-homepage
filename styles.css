@@ -1,0 +1,189 @@
+body {
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr;
+  grid-template-areas: "logo search profile"
+                       "left main right"
+                       "left footer right";
+  width: 100vw;
+  grid-gap: 0.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 0 1em 0.75em;
+}
+
+.logo {
+  grid-area: logo;
+  align-self: center;
+}
+
+.logo > img {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.search {
+  grid-area: search;
+  align-self: center;
+}
+
+.search > form > input {
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.profile {
+  grid-area: profile;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile > ul {
+  display: flex;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-menu li {
+  padding: 0.75em;
+}
+
+.content-menu a {
+  font-size: 0.875em;
+  color: grey;
+  text-decoration: none;
+}
+
+.content-menu a:hover {
+  color: black;
+}
+
+.settings {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settings > ul, .content-links > ul {
+  display: flex;
+}
+
+.content-links .current {
+  border-bottom: 2px solid blue;
+}
+
+.content-links .current > a {
+  color: blue;
+}
+
+.performance p {
+  color: grey;
+  padding: 0.75em 1em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+}
+
+.sponsored li {
+  margin-left: 3em;
+}
+
+.sponsored a {
+  color: grey;
+  padding: 1em 3em;
+  font-size: 0.875em;
+  display: block;
+  text-decoration: none;
+}
+
+.sponsored a:hover {
+  text-decoration: underline;
+}
+
+.sponsored .link, .link {
+  font-size: 1.25em;
+  padding: 0.25em 0.5em;
+  color: blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.url {
+  color: green;
+  padding: 0 0.75em 0.5em;
+  font-size: 0.875em;
+}
+
+.top-link {
+  border: 1px solid lightgrey;
+  border-top: none;
+}
+
+.sponsored-notice ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sponsored-notice li {
+  margin-left: 0;
+}
+
+.sponsored-notice a {
+  font-size: 0.75em;
+  padding: 0.25em 1em;
+}
+
+.description {
+  padding: 0 0.5em;
+  font-size: 0.875em;
+  margin-bottom: 1.5em;
+  color: hsla(0, 100%, 0%, 0.7);
+}
+
+.footer {
+  font-size: 0.75em;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.legal > ul {
+  display: flex;
+}
+
+.legal > ul > li {
+  padding: 0.5em 2em 0.5em 0;
+}
+
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: black;
+}
